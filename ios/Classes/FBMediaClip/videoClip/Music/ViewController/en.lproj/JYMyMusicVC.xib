@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JYMyMusicVC">
+            <connections>
+                <outlet property="tableView" destination="oZT-6q-Ehk" id="XmO-kE-rD4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI2-AB-VnS">
+                    <rect key="frame" x="0.0" y="10" width="375" height="91"/>
+                    <state key="normal" image="video_music_guide_en"/>
+                    <connections>
+                        <action selector="topButtonAction:" destination="-1" eventType="touchUpInside" id="QVl-ff-TRA"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oZT-6q-Ehk">
+                    <rect key="frame" x="0.0" y="111" width="375" height="556"/>
+                    <color key="backgroundColor" red="0.13967922329902649" green="0.13945966958999634" blue="0.16388756036758423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqO-Z2-eJ0">
+                    <rect key="frame" x="15" y="592" width="345" height="50"/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.14901960784313725" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NoS-Lp-aG4"/>
+                    </constraints>
+                    <state key="normal" title="Import music from video">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="importMusic:" destination="-1" eventType="touchUpInside" id="KpX-2h-OVP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.13967922329902649" green="0.13945966958999634" blue="0.16388756036758423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oZT-6q-Ehk" firstAttribute="top" secondItem="aI2-AB-VnS" secondAttribute="bottom" constant="10" id="2Tm-qP-NDl"/>
+                <constraint firstAttribute="trailing" secondItem="oZT-6q-Ehk" secondAttribute="trailing" id="HhC-lM-Moe"/>
+                <constraint firstItem="aI2-AB-VnS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Mkp-4K-lJJ"/>
+                <constraint firstItem="FqO-Z2-eJ0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="SX8-5Y-6kf"/>
+                <constraint firstItem="oZT-6q-Ehk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UOm-A4-sTg"/>
+                <constraint firstAttribute="bottom" secondItem="FqO-Z2-eJ0" secondAttribute="bottom" constant="25" id="XAr-fl-2XA"/>
+                <constraint firstItem="aI2-AB-VnS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ict-ho-qQ9"/>
+                <constraint firstAttribute="bottom" secondItem="oZT-6q-Ehk" secondAttribute="bottom" id="iyF-fd-LwX"/>
+                <constraint firstItem="FqO-Z2-eJ0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oMD-wo-zaE"/>
+                <constraint firstAttribute="trailing" secondItem="aI2-AB-VnS" secondAttribute="trailing" id="tAd-TG-Ow1"/>
+                <constraint firstAttribute="trailing" secondItem="FqO-Z2-eJ0" secondAttribute="trailing" constant="15" id="tuO-ku-K73"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="114.69265367316342"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="video_music_guide_en" width="348" height="91"/>
+    </resources>
+</document>

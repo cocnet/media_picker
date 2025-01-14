@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JYFxContrastView">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQd-zF-Ue5">
+                    <rect key="frame" x="21.5" y="18" width="60" height="34"/>
+                    <color key="backgroundColor" red="0.25882352939999997" green="0.2470588235" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="M7H-pJ-qHC"/>
+                        <constraint firstAttribute="height" constant="34" id="p3A-nX-IDf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="对比">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="contrastTouchDownEvent:" destination="iN0-l3-epB" eventType="touchDown" id="OIM-fo-o79"/>
+                        <action selector="contrastTouchUpInsideEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="EhV-Ul-Cu6"/>
+                        <action selector="contrastTouchUpOutsideEvent:" destination="iN0-l3-epB" eventType="touchDragOutside" id="hrs-jm-I7p"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dQd-zF-Ue5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2fx-cL-eUU"/>
+                <constraint firstItem="dQd-zF-Ue5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dy8-n7-ZyU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="dQd-zF-Ue5" id="ZDp-6L-1nR"/>
+            </connections>
+            <point key="canvasLocation" x="-87.681159420289859" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_while_rectangle_radius"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:textColor="@color/dialog_context"
+            android:text="@string/dialog_context"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dialog_bg"></View>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:textColor="@color/dialog_confirm"
+            android:text="@string/dialog_confirm"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/dialog_bg"></View>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="52dp"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/dialog_cancel"
+            android:gravity="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

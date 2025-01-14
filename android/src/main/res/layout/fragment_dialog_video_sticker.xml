@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <!-- 第二层 贴纸操作面板  -->
+        <RelativeLayout
+            android:id="@+id/rl_stick_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            >
+            <!--    视频播放信息及控制    -->
+            <RelativeLayout
+                android:id="@+id/rl_video_info"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/color_fragment_background"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="12dp">
+                <!--      视频播放按钮      -->
+                <ImageView
+                    android:id="@+id/videoPlay"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_icon_video_play" />
+
+                <LinearLayout
+                    android:id="@+id/durationLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/zoomOut"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="2dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/zoom_out" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_current_play_time_preview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/zoomIn"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/zoom_in" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/rl_video_info"
+                android:background="@drawable/edit_dialog_fragment_background"
+                >
+                <!--   当前贴纸长度信息及添加贴纸按钮     -->
+                <RelativeLayout
+                    android:id="@+id/rl_add_stick"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="12dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_stick_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="拖动可修改贴纸时长"
+                        android:textColor="#80ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sticker_add"
+                        android:layout_width="74dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_border_caption_add_background"
+                        android:gravity="center"
+                        android:text="添加贴纸"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+                <!-- 贴纸时间调整工具 -->
+                <RelativeLayout
+                    android:id="@+id/sequenceLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_above="@+id/rl_bottom_bar">
+
+                    <com.idreamsky.fanbook.media_edit.views.timelineEditor.ClipTimelineScale
+                        android:id="@+id/clip_timeline_scale_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="12dp"
+                        app:time_scale_color="@color/title_gray"
+                        app:time_scale_height="12dp"
+                        app:time_scale_size="10sp" />
+
+                    <com.idreamsky.fanbook.media_edit.views.timelineEditor.NvsTimelineEditor
+                        android:id="@+id/timelineEditor"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="6dp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white" />
+                </RelativeLayout>
+
+                <!-- 贴纸取消保存栏 -->
+                <RelativeLayout
+                    android:id="@+id/rl_bottom_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/btn_cancel_sticker"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_video_edit_cancel" />
+
+                    <Button
+                        android:id="@+id/btn_confirm_sticker"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_video_edit_confirm" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="贴纸"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            
+        </RelativeLayout>
+
+        <!-- 第一层 所有贴纸列表view  -->
+        <LinearLayout
+            android:id="@+id/ll_stick_grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/edit_dialog_fragment_background"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="贴纸"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" 
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="6dp"
+                    />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_sticker_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

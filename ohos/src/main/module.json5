@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "multi_image_picker",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ]
+  }
+}

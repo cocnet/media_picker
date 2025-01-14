@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+        <!--  新版ui  -->
+        <LinearLayout
+            android:id="@+id/ll_adjust_clip"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/angle_layout"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_current_rotation"
+                    android:layout_width="80dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="旋转角度0"
+                    android:textColor="@color/title_white"
+                    android:textSize="12sp" />
+
+                <SeekBar
+                    android:id="@+id/sb_adjust_rotation"
+                    style="@style/music_volume_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="32dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <RelativeLayout
+                    android:id="@+id/rotateLayout"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/rotateImage"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/ic_edit_rotate" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rotateImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="旋转"
+                        android:textColor="@color/title_white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/color_half_transparent_white" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_adjust_clip_ratio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--   原版ui     -->
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            >
+<!--            <LinearLayout-->
+<!--                android:id="@+id/angle_layout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingLeft="15dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="角度"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="27dp"-->
+<!--                    android:text="-45"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="10dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="34dp"-->
+<!--                    android:text="45"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="10sp" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/rv_adjust_ratio"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/adjust"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="78dp">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/horizLayout"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="78dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/horizImage"-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:background="@mipmap/horizontal" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/horizImage"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:text="水平"-->
+<!--                        android:textColor="@color/ccffffff"-->
+<!--                        android:textSize="12sp" />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/verticLayout"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="78dp"-->
+<!--                    android:layout_marginLeft="23dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/verticImage"-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:background="@mipmap/vertical" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/verticImage"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:text="垂直"-->
+<!--                        android:textColor="@color/ccffffff"-->
+<!--                        android:textSize="12sp" />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/rotateLayout"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="78dp"-->
+<!--                    android:layout_marginLeft="23dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/rotateImage"-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:background="@mipmap/rotate" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/rotateImage"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:text="旋转"-->
+<!--                        android:textColor="@color/ccffffff"-->
+<!--                        android:textSize="12sp" />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/resetLayout"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="78dp"-->
+<!--                    android:layout_marginLeft="23dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/resetImage"-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:background="@mipmap/reset" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/resetImage"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:text="复位"-->
+<!--                        android:textColor="@color/ccffffff"-->
+<!--                        android:textSize="12sp" />-->
+<!--                </RelativeLayout>-->
+<!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

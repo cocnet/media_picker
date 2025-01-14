@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_caption_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            />
+
+        <View
+            android:id="@+id/selectedItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_border_animatesticker_selected" />
+
+        <ImageView
+            android:id="@+id/iv_caption_download_wait"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_download_arrow" />
+
+        <ProgressBar
+            android:id="@+id/pb_caption_downloading"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

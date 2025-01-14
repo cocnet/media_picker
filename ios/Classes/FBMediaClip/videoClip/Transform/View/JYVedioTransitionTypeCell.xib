@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JYVedioTransitionTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDt-Kl-5OH">
+                        <rect key="frame" x="52.5" y="53.5" width="48" height="48"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t4U-pq-IiB">
+                                <rect key="frame" x="14" y="14" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="1vp-3a-GRP"/>
+                                    <constraint firstAttribute="height" constant="20" id="f4A-Sf-qhM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.099144345238095233" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t4U-pq-IiB" firstAttribute="centerY" secondItem="yDt-Kl-5OH" secondAttribute="centerY" id="7iV-2F-DdW"/>
+                            <constraint firstAttribute="width" constant="48" id="Csi-5e-1C8"/>
+                            <constraint firstAttribute="height" constant="48" id="kpx-uk-rQY"/>
+                            <constraint firstItem="t4U-pq-IiB" firstAttribute="centerX" secondItem="yDt-Kl-5OH" secondAttribute="centerX" id="u8e-bT-zBT"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tG-pd-uEV">
+                        <rect key="frame" x="0.0" y="107.5" width="153" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yDt-Kl-5OH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2i3-as-BKN"/>
+                <constraint firstItem="yDt-Kl-5OH" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="6cs-Rq-jMx"/>
+                <constraint firstItem="4tG-pd-uEV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="94q-zS-W1c"/>
+                <constraint firstItem="4tG-pd-uEV" firstAttribute="top" secondItem="yDt-Kl-5OH" secondAttribute="bottom" constant="6" id="Dv8-ju-evu"/>
+                <constraint firstAttribute="trailing" secondItem="4tG-pd-uEV" secondAttribute="trailing" id="noG-yd-dJ6"/>
+            </constraints>
+            <size key="customSize" width="153" height="155"/>
+            <connections>
+                <outlet property="centerView" destination="yDt-Kl-5OH" id="CLZ-jW-28b"/>
+                <outlet property="iconImageView" destination="t4U-pq-IiB" id="1bK-R3-NII"/>
+                <outlet property="nameLabel" destination="4tG-pd-uEV" id="BgJ-Hc-Guo"/>
+            </connections>
+            <point key="canvasLocation" x="146.40000000000001" y="157.87106446776613"/>
+        </collectionViewCell>
+    </objects>
+</document>

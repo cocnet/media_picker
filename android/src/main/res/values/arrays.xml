@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--调整选择比例-->
+    <array name="adjudt_ration">
+        <item>@mipmap/adjudt_ration_free</item>
+        <item>@mipmap/adjudt_ration_9v16</item>
+        <item>@mipmap/adjudt_ration_3v4</item>
+        <item>@mipmap/adjudt_ration_9v18</item>
+        <item>@mipmap/adjudt_ration_9v21</item>
+        <item>@mipmap/adjudt_ration_1v1</item>
+        <item>@mipmap/adjudt_ration_16v9</item>
+        <item>@mipmap/adjudt_ration_4v3</item>
+        <item>@mipmap/adjudt_ration_18v9</item>
+        <item>@mipmap/adjudt_ration_21v9</item>
+    </array>
+    <array name="adjudt_ration_selected">
+        <item>@mipmap/adjudt_ration_free_selected</item>
+        <item>@mipmap/adjudt_ration_9v16_selected</item>
+        <item>@mipmap/adjudt_ration_3v4_selected</item>
+        <item>@mipmap/adjudt_ration_9v18_selected</item>
+        <item>@mipmap/adjudt_ration_9v21_selected</item>
+        <item>@mipmap/adjudt_ration_1v1_selected</item>
+        <item>@mipmap/adjudt_ration_16v9_selected</item>
+        <item>@mipmap/adjudt_ration_4v3_selected</item>
+        <item>@mipmap/adjudt_ration_18v9_selected</item>
+        <item>@mipmap/adjudt_ration_21v9_selected</item>
+    </array>
+</resources>

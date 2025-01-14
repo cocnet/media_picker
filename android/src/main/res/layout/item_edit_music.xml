@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_music_item"
+    android:layout_width="64dp"
+    android:layout_height="70dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_music_icon"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_item_video_filter_unselected"
+        >
+
+        <ImageView
+            android:id="@+id/iv_music_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_music_select_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_item_video_filter_selected_stroke"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_music_download"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_download_arrow" />
+
+        <ProgressBar
+            android:id="@+id/pb_music_downloading"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_music_name"
+        android:layout_width="54dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/rl_music_icon"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="music name"
+        android:textColor="@color/title_gray"
+        android:textSize="13sp" />
+</RelativeLayout>

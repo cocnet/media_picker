@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sangcomz.fishbun.util.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    android:background="@color/cardview_dark_background"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_show_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_show_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/drawable_image_fade_annotation"
+        android:weightSum="1.0"
+        android:visibility="invisible"
+        android:layout_gravity="bottom"
+        android:id="@+id/gif_thumb_info_view">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="GIF"
+            android:textColor="@android:color/white"
+            android:gravity="center|left"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/gif_thumb_info_text_view"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/drawable_image_fade_annotation"
+        android:weightSum="1.0"
+        android:layout_gravity="bottom"
+        android:id="@+id/video_thumb_info_view">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_videocam_white_24dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="00:10"
+            android:textColor="@android:color/white"
+            android:gravity="center|right"
+            android:layout_marginRight="5dp"
+            android:id="@+id/video_thumb_duration_info_view"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/drawable_detail_gradient"
+        android:layout_height="match_parent" />
+
+    <com.sangcomz.fishbun.util.RadioWithTextButton
+        android:id="@+id/btn_thumb_count"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_margin="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0"
+        android:id="@+id/conver_view"
+        android:visibility="gone"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:alpha="0.5"
+        android:visibility="invisible"
+        android:id="@+id/ban_cover_view" />
+
+</com.sangcomz.fishbun.util.SquareFrameLayout>

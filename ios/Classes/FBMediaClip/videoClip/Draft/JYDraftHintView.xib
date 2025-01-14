@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JYDraftHintView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7v4-vW-Zfv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwz-cH-6Us">
+                    <rect key="frame" x="74.5" y="315.5" width="265" height="175"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VOa-az-zYX">
+                            <rect key="frame" x="0.0" y="0.0" width="265" height="175"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJC-YC-1Ta">
+                                    <rect key="frame" x="0.0" y="0.0" width="265" height="58.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlb-Oa-Av2">
+                                            <rect key="frame" x="15" y="57.5" width="235" height="1"/>
+                                            <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="deviceRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="ypn-9S-wKM"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接上次剪辑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irZ-k0-Hjk">
+                                            <rect key="frame" x="15" y="21.5" width="66.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="hKz-mT-OcM">
+                                            <rect key="frame" x="206" y="7.5" width="44" height="44"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="N6q-Rw-Byb"/>
+                                                <constraint firstAttribute="height" constant="44" id="g4d-ab-HjG"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="rlb-Oa-Av2" secondAttribute="bottom" id="BeH-3d-UW5"/>
+                                        <constraint firstItem="irZ-k0-Hjk" firstAttribute="centerY" secondItem="OJC-YC-1Ta" secondAttribute="centerY" id="Bsd-4l-FmV"/>
+                                        <constraint firstItem="hKz-mT-OcM" firstAttribute="centerY" secondItem="OJC-YC-1Ta" secondAttribute="centerY" id="eDI-1Q-CK8"/>
+                                        <constraint firstItem="rlb-Oa-Av2" firstAttribute="leading" secondItem="OJC-YC-1Ta" secondAttribute="leading" constant="15" id="f3F-9g-T3C"/>
+                                        <constraint firstItem="irZ-k0-Hjk" firstAttribute="leading" secondItem="OJC-YC-1Ta" secondAttribute="leading" constant="15" id="ki0-6Q-kbg"/>
+                                        <constraint firstAttribute="trailing" secondItem="rlb-Oa-Av2" secondAttribute="trailing" constant="15" id="tlV-vf-znb"/>
+                                        <constraint firstAttribute="trailing" secondItem="hKz-mT-OcM" secondAttribute="trailing" constant="15" id="xC9-9x-Qi4"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALA-qi-dAO">
+                                    <rect key="frame" x="0.0" y="58.5" width="265" height="58.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0g-Ma-EZf">
+                                            <rect key="frame" x="15" y="57.5" width="235" height="1"/>
+                                            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="deviceRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="XHg-1O-M4j"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ova-8G-IM5">
+                                            <rect key="frame" x="20" y="0.0" width="225" height="57.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="开始新创作" image="video_common_add_3">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="createEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="tc4-uQ-mMQ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Ova-8G-IM5" firstAttribute="top" secondItem="ALA-qi-dAO" secondAttribute="top" id="R6Y-ah-5Ko"/>
+                                        <constraint firstAttribute="bottom" secondItem="m0g-Ma-EZf" secondAttribute="bottom" id="W6q-Ro-ug6"/>
+                                        <constraint firstAttribute="trailing" secondItem="m0g-Ma-EZf" secondAttribute="trailing" constant="15" id="bPL-7R-Yt4"/>
+                                        <constraint firstItem="m0g-Ma-EZf" firstAttribute="leading" secondItem="ALA-qi-dAO" secondAttribute="leading" constant="15" id="dXb-n2-cIL"/>
+                                        <constraint firstItem="Ova-8G-IM5" firstAttribute="leading" secondItem="ALA-qi-dAO" secondAttribute="leading" constant="20" symbolic="YES" id="eqW-jW-CHg"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ova-8G-IM5" secondAttribute="trailing" constant="20" symbolic="YES" id="qnQ-XP-jdf"/>
+                                        <constraint firstItem="m0g-Ma-EZf" firstAttribute="top" secondItem="Ova-8G-IM5" secondAttribute="bottom" id="vBz-nN-YM9"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyC-BO-jZh">
+                                    <rect key="frame" x="0.0" y="117" width="265" height="58"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-aO-4Kl">
+                                            <rect key="frame" x="19.5" y="-0.5" width="225" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="草稿箱" image="video_draft">
+                                                <color key="titleColor" red="0.96470588239999999" green="0.14901960780000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="draftEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="BG3-ge-xZJ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ALA-qi-dAO" firstAttribute="height" secondItem="OJC-YC-1Ta" secondAttribute="height" id="5Ms-c2-qbM"/>
+                                <constraint firstItem="tyC-BO-jZh" firstAttribute="height" secondItem="OJC-YC-1Ta" secondAttribute="height" id="pwq-sA-jx0"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="265" id="AuW-38-k6x"/>
+                        <constraint firstAttribute="bottom" secondItem="VOa-az-zYX" secondAttribute="bottom" id="NRF-i1-JoH"/>
+                        <constraint firstAttribute="height" constant="175" id="OrE-VH-QRf"/>
+                        <constraint firstAttribute="trailing" secondItem="VOa-az-zYX" secondAttribute="trailing" id="c7R-kb-bIc"/>
+                        <constraint firstItem="VOa-az-zYX" firstAttribute="top" secondItem="Xwz-cH-6Us" secondAttribute="top" id="hPk-D2-oUQ"/>
+                        <constraint firstItem="VOa-az-zYX" firstAttribute="leading" secondItem="Xwz-cH-6Us" secondAttribute="leading" id="jp3-VT-I25"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Xwz-cH-6Us" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.9" id="118-na-oKN"/>
+                <constraint firstItem="7v4-vW-Zfv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9xN-uu-DBa"/>
+                <constraint firstAttribute="trailing" secondItem="7v4-vW-Zfv" secondAttribute="trailing" id="PnI-ms-3jg"/>
+                <constraint firstItem="Xwz-cH-6Us" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VFi-0w-hYX"/>
+                <constraint firstAttribute="bottom" secondItem="7v4-vW-Zfv" secondAttribute="bottom" id="axM-1y-Lg2"/>
+                <constraint firstItem="7v4-vW-Zfv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hQi-qQ-Aet"/>
+            </constraints>
+            <connections>
+                <outlet property="alertView" destination="Xwz-cH-6Us" id="JVf-Ey-ii8"/>
+                <outlet property="bgView" destination="7v4-vW-Zfv" id="3h2-wf-CpG"/>
+                <outlet property="createButton" destination="Ova-8G-IM5" id="7RM-Bo-kvk"/>
+                <outlet property="draftButton" destination="Mh3-aO-4Kl" id="Tcn-XM-uCp"/>
+                <outlet property="mImageView" destination="hKz-mT-OcM" id="uLP-Eb-RSN"/>
+                <outlet property="titleLabel" destination="irZ-k0-Hjk" id="UZR-MW-nhQ"/>
+                <outlet property="topView" destination="OJC-YC-1Ta" id="vJ6-2X-hTT"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_app_icon" width="106" height="103.5"/>
+        <image name="video_common_add_3" width="20" height="20"/>
+        <image name="video_draft" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="28dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/captionOutlineNoColor"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_icon_outline_no"
+            android:layout_centerInParent="true"
+            android:background="#1F2126"
+            />
+
+        <View
+            android:id="@+id/v_outline_background"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            />
+
+        <View
+            android:id="@+id/captionOutlineColor"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_icon_outline_background"
+            />
+
+        <View
+            android:id="@+id/selectedItem"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/shape_border_caption_color_selected"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

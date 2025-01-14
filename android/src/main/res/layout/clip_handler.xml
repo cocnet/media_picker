@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_rounder_border">
+
+
+    <RelativeLayout
+        android:id="@+id/leftHandle"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shape_left_handler">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:background="@color/primaryThemeColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightHandle"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape_right_handler">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:background="@color/primaryThemeColor" />
+    </RelativeLayout>
+
+</RelativeLayout>

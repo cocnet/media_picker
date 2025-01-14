@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/edit_dialog_fragment_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_drag_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_clip_sort_close"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:padding="11dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="拖动调整排序"
+                android:textColor="@color/title_white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_clip_sort_done"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:padding="11dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_sure" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+</LinearLayout>

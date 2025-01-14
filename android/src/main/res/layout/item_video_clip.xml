@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_clip_item"
+    android:layout_width="54dp"
+    android:layout_height="54dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_clip_container"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_clip_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/tv_clip_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:shadowColor="@color/color_duration_shadow"
+                android:shadowDx="0"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:text="0s"
+                android:textColor="@color/title_white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

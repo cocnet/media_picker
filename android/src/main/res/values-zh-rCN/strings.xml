@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="album">专辑</string>
+    <string name="camera">摄像头</string>
+    <string name="done">发送</string>
+    <string name="thumb">缩略图</string>
+    <string name="origin">原图</string>
+    <string name="done_all">完成所有</string>
+    <string name="msg_no_selected">没有选择的图片</string>
+    <string name="str_all_view">所有视图</string>
+    <string name="msg_permission">没有权限</string>
+    <string name="msg_no_image">没有图片</string>
+    <string name="msg_full_image">图片选择超过最大限制</string>
+    <string name="msg_loading_image">载入中...</string>
+    <string name="image">图片</string>
+    <string name="msg_error">遇到一个错误，请再次尝试。</string>
+    <string name="back">退出</string>
+    <string name="cancel">取消</string>
+    <string name="preview">预览</string>
+    <string name="none_album_string">专辑列表为空</string>
+    <string name="select">选择</string>
+
+    <string name="dialog_context">确定返回吗？返回后编辑操作\n将不会保留。</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+    <string-array name="animatedSticker_type">
+        <item>全部</item>
+        <item>自定义</item>
+    </string-array>
+    <string name="ucrop_label_original">Original</string>
+    <string name="ucrop_label_edit_photo">Edit Photo</string>
+    <string name="ucrop_menu_crop">Crop</string>
+    <string name="ucrop_error_input_data_is_absent" translatable="false">Both input and output Uri must be specified</string>
+    <string name="ucrop_mutate_exception_hint" translatable="false">Therefore, override color resource (ucrop_color_toolbar_widget) in your app to make it work on pre-L devices</string>
+    <string name="ucrop_rotate">Rotate</string>
+    <string name="ucrop_scale">Scale</string>
+    <string name="ucrop_crop">Crop</string>
+
+    <string-array name="captionEdit">
+        <item>样式</item>
+        <item>填充</item>
+        <item>描边</item>
+        <item>背景</item>
+        <item>字体</item>
+        <item>间距</item>
+        <item>位置</item>
+    </string-array>
+    <string-array name="pieced_caption">
+        <item>花字</item>
+        <item>动画</item>
+        <item>气泡</item>
+        <item>填充</item>
+        <item>描边</item>
+        <item>背景</item>
+        <item>字体</item>
+        <item>间距</item>
+        <item>位置</item>
+    </string-array>
+    <string-array name="array_sticker_style">
+        <item>动画</item>
+    </string-array>
+    <string name="outline_width">宽度</string>
+    <string name="size">0</string>
+    <string name="opacity">不透明度</string>
+    <string name="corner">圆角</string>
+    <string name="margin">边距</string>
+    <string name="bold">加粗</string>
+    <string name="italic">斜体</string>
+    <string name="shadow">阴影</string>
+    <string name="underscore">下划线</string>
+    <string name="line_spacing">行间距</string>
+    <string name="letter_spacing">字间距</string>
+    <string name="small">较小</string>
+    <string name="standard">标准</string>
+    <string name="more_large">较大</string>
+    <string name="large">大</string>
+    <string name="apply_to_all">将样式应用到所有字幕</string>
+    <string name="inputSubtitle">请输入字幕：</string>
+    <string name="input">输入</string>
+    <string name="confirm">确认</string>
+    <string name="confirm2">确定</string>
+    <string name="check_network">请检查网络！</string>
+    <string name="download_failed">下载失败！</string>
+    <string name="giveupfx">是否放弃已有效果？</string>
+
+    <string name="traditional_caption">传统字幕</string>
+    <string name="pieced_together_caption">拼装字幕</string>
+    <string name="march_out_animation">出场动画</string>
+    <string name="march_in_animation">入场动画</string>
+    <string name="combination_animation">组合动画</string>
+
+    <!--转场-->
+    <string name="trans_fade">淡入淡出</string>
+    <string name="trans_turning">翻转</string>
+    <string name="trans_swap">层叠</string>
+    <string name="trans_stretch_in">伸展进入</string>
+    <string name="trans_page_curl">卷页</string>
+    <string name="trans_lens_flare">镜头眩光</string>
+    <string name="trans_star">星形</string>
+    <string name="trans_dip_to_black">闪黑</string>
+    <string name="trans_dip_to_white">闪白</string>
+    <string name="trans_push_to_right">右推拉</string>
+    <string name="trans_push_to_top">上推拉</string>
+    <string name="trans_upper_left_into">斜推拉</string>
+
+    <!--美颜-->
+    <string name="no">无</string>
+    <string name="strength">磨皮</string>
+    <string name="strength_A">磨皮A</string>
+    <string name="strength_B">磨皮B</string>
+    <string name="whitening">美白</string>
+    <string name="whitening_A">美白A</string>
+    <string name="whitening_B">美白B</string>
+    <string name="ruddy">红润</string>
+    <string name="correctionColor">校色</string>
+    <string name="sharpness">锐度</string>
+
+    <string name="view_component_button_cancel">取消</string>
+    <string name="view_component_button_send">发送</string>
+    <string name="view_component_limit_min_warn">输入内容不能少于%1$d字</string>
+    <string name="view_component_limit_max_warn">输入内容不能超过%1$d字</string>
+</resources>

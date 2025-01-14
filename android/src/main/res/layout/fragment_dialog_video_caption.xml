@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_dialog_fragment_background">
+
+    <!--  最外层总体布局  -->
+    <RelativeLayout
+        android:id="@+id/rl_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <!-- 花字和样式选择层 -->
+        <RelativeLayout
+            android:id="@+id/rl_caption_select_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <!-- 文字内容输入框 -->
+            <RelativeLayout
+                android:id="@+id/rl_content_input"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:id="@+id/tv_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/shape_border_animatesticker_background"
+                    android:gravity="center_vertical"
+                    android:hint="点击输入文字"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#66ffffff"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+            <!-- 花字和样式选择list -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rl_bottom_style"
+                android:layout_below="@+id/rl_content_input"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+                <!-- 花字选择 -->
+                <RelativeLayout
+                    android:id="@+id/rl_caption_style_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_caption_style_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+                <!-- 样式选择 -->
+                <LinearLayout
+                    android:id="@+id/ll_caption_color_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <!-- 字体选择 -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_caption_font_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_marginBottom="16dp" />
+                    <!-- 描边选择 -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_caption_outline_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_marginBottom="15dp" />
+                    <!-- 颜色选择 -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_caption_color_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="15dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 确定按钮操作栏 -->
+            <RelativeLayout
+                android:id="@+id/rl_bottom_style"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btn_cancel_caption_select"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_video_edit_cancel" />
+
+                <Button
+                    android:id="@+id/btn_confirm_caption_select"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_video_edit_confirm" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/tv_caption_theme_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="花字"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_caption_style_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_toRightOf="@+id/tv_caption_theme_select"
+                        android:text="样式"
+                        android:textColor="#898989"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <!-- 时间轴控制层 -->
+        <RelativeLayout
+            android:id="@+id/rl_caption_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 添加文字按钮栏 -->
+            <RelativeLayout
+                android:id="@+id/rl_add_caption"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="拖动可修改文字时长"
+                    android:textColor="#80ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_caption_add"
+                    android:layout_width="74dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/shape_border_caption_add_background"
+                    android:gravity="center"
+                    android:text="添加文字"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <!-- 时间轴编辑栏 -->
+            <RelativeLayout
+                android:id="@+id/rl_timeline_editor"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_above="@+id/rl_bottom_edit"
+                android:layout_marginBottom="16dp">
+
+                <com.idreamsky.fanbook.media_edit.views.timelineEditor.ClipTimelineScale
+                    android:id="@+id/clip_timeline_scale_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="12dp"
+                    app:time_scale_color="@color/title_gray"
+                    app:time_scale_height="12dp"
+                    app:time_scale_size="10sp" />
+
+                <com.idreamsky.fanbook.media_edit.views.timelineEditor.NvsTimelineEditor
+                    android:id="@+id/caption_timeline_editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white" />
+
+            </RelativeLayout>
+            <!-- 确定按钮操作栏 -->
+            <RelativeLayout
+                android:id="@+id/rl_bottom_edit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btn_cancel_caption_edit"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_video_edit_cancel" />
+
+                <Button
+                    android:id="@+id/btn_confirm_caption_edit"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_video_edit_confirm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="文字"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用颜色 -->
+    <color name="primaryThemeColor">#198CFE</color>
+    <color name="primaryThemeColor90A">#E6198CFE</color>
+    <color name="color_pick_background">#1A2033</color>
+    <color name="color_fragment_background">#141414</color>
+    <color name="color_edit_dialog_background">#1F1F1F</color>
+    <color name="color_colors_border">#338D93A6</color>
+    <color name="dialog_context">#5C6273</color>
+    <color name="video_too_long_dialog_background">#353535</color>
+    <color name="dialog_confirm">#198CFE</color>
+    <color name="dialog_cancel">#1F2126</color>
+    <color name="dialog_bg">#F5F6FA</color>
+    <color name="dark_background">#000000</color>
+    <color name="gray_background">#181818</color>
+    <color name="title_white">#FFFFFF</color>
+    <color name="shadow_black_50a">#80000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="title_gray">#80FFFFFF</color>
+    <color name="item_background_gray">#1A000000</color>
+    <color name="color_half_transparent_white">#80FFFFFF</color>
+    <color name="color_music_clip_area">#3b3b3c</color>
+    <color name="color_music_clip_block">#33198CFE</color>
+    <color name="color_music_wave_strip">#6F6F70</color>
+    <color name="color_music_seekbar_bg">#33FFFFFF</color>
+    <color name="color_music_seekbar_progress">#99FFFFFF</color>
+    <color name="color_speed_seekbar">#33FFFFFF</color>
+    <color name="color_speed_seekbar_spot">#8D93A6</color>
+    <color name="color_music_item_bg">#6F6F70</color>
+    <color name="color_duration_bg">#8C1F2126</color>
+    <color name="color_record_bg">#661F2126</color>
+    <color name="color_duration_shadow">#66000000</color>
+    <color name="color_loading_dialog_bg">#1F2126</color>
+
+    <!--Palette-->
+    <color name="ucrop_color_black">#000</color>
+    <color name="ucrop_color_blaze_orange">#FF6300</color>
+    <color name="ucrop_color_ebony_clay">#20242F</color>
+    <color name="ucrop_color_heather">#B3BECE</color>
+    <color name="ucrop_color_white">#FFF</color>
+
+    <!--uCrop Activity-->
+    <color name="ucrop_color_toolbar">@color/ucrop_color_white</color>
+    <color name="ucrop_color_statusbar">#f5f5f5</color>
+    <color name="ucrop_color_toolbar_widget">@color/ucrop_color_black</color>
+    <color name="ucrop_color_widget">@color/ucrop_color_black</color>
+    <color name="ucrop_color_widget_active">@color/ucrop_color_white</color>
+    <color name="ucrop_color_active_controls_color">@color/ucrop_color_blaze_orange</color>
+    <color name="ucrop_color_inactive_controls_color">@color/ucrop_color_heather</color>
+    <color name="ucrop_color_widget_rotate_mid_line">@color/ucrop_color_blaze_orange</color>
+    <color name="ucrop_color_widget_rotate_angle">@color/ucrop_color_ebony_clay</color>
+    <color name="ucrop_color_active_aspect_ratio">@color/ucrop_color_blaze_orange</color>
+    <color name="ucrop_color_inactive_aspect_ratio">@color/ucrop_color_ebony_clay</color>
+    <color name="ucrop_color_widget_background">@color/ucrop_color_ebony_clay</color>
+    <color name="ucrop_color_widget_text">@color/ucrop_color_blaze_orange</color>
+    <color name="ucrop_color_progress_wheel_line">@color/ucrop_color_ebony_clay</color>
+    <color name="ucrop_color_crop_background">@color/ucrop_color_black</color>
+
+    <!--Crop View-->
+    <color name="ucrop_color_default_crop_grid">#80ffffff</color>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <color name="ucrop_color_default_dimmed">#8c000000</color>
+    <color name="ucrop_color_default_logo">#4f212121</color>
+    <color name="color_item_gray_bg">#1AFFFFFF</color>
+
+
+    <!-- 以下是美摄SDK demo中定义的颜色 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="ff333333">#ff333333</color>
+    <color name="ff393939">#ff393939</color>
+    <color name="ff242728">#242728</color>
+    <color name="dd000000">#dd000000</color>
+    <color name="ffffffff">#ffffffff</color>
+    <color name="ccffffff">#CCffffff</color>
+    <color name="ff000000">#000000</color>
+    <color name="white_f8">#fff8f8f8</color>
+    <color name="alpha60_black">#66000000</color>
+    <color name="douyin_edit_background">#242728</color>
+    <color name="black_f3">#50000000</color>
+    <color name="ff4a90e2">#4a90e2</color>
+    <color name="cc4a90e2">#CC4a90e2</color>
+    <color name="ms994a90e2">#994a90e2</color>
+    <!-- 编辑界面 -->
+    <color name="msff242728">#ff363738</color>
+    <color name="ms979797">#979797</color>
+    <color name="msc4c4c4">#c4c4c4</color>
+    <color name="color_edit_buttomlayout">#ff242728</color>
+
+    <color name="unsel_white">#999cb0</color>
+    <color name="black_alfph">#CC000000</color>
+    <color name="colorTranslucent">#00000000</color>
+    <color name="color60PercentWhite">#99ffffff</color>
+    <color name="colorThumbnailBorder">#FFD500</color>
+    <color name="color_yellow_a5">#FFA54B</color>
+    <color name="colorThumbViewSelected">#FFD500</color>
+    <color name="colorThumbViewUnSelected">#59502b</color>
+    <color name="fx_un_select">#ff4d4f51</color>
+    <color name="fx_select">#994a90e2</color>
+    <color name="ms_blue">#4a90e2</color>
+    <color name="nv_colorTranslucent">#00000000</color>
+    <color name="ms_gray">#4D4F51</color>
+    <color name="white_fb">#FFFBFB</color>
+    <color name="ms_red">#D0021B</color>
+    <color name="dy_yellow">#F8E71C</color>
+    <color name="dy_text_after_music_seleeted">#B3FFFFFF</color>
+    <color name="color_fx_select">#B352D3FF</color>
+    <color name="blue">#CC3DB5FE</color>
+    <color name="white_half">#999999</color>
+    <color name="white_10">#19ffffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="ms_disable_color">#4D4F51</color>
+    <color name="ms_colorImageSelect">#52D3FF</color>
+    <color name="menu_selected">#4A90E2</color>
+
+    <color name="cs_textColor_recording">#ffd0021b</color>
+    <color name="select_bg_blue">#7F4A90E2</color>
+
+    <color name="douyin_speed_color">#4d000000</color>
+    <color name="douyin_speed_select_color">#ffd8d8d8</color>
+    <color name="douyin_speed_text_color">#ffeaebeb</color>
+    <color name="douyin_speed_text_select_color">#ff4d4f51</color>
+    <!-- 统一规范 -->
+    <color name="title_center_text_color">#ccffffff</color>
+    <!--    mimo-->
+    <color name="msfff5a623">#fff5a623</color>
+    <color name="color_black">#ff000000</color>
+
+    <color name="ff1a1d24">#ff1a1d24</color>
+    <color name="msffd0021b">#ffd0021b</color>
+    <color name="red_4fea">#4fea4359</color>
+    <color name="msff2a7dff">#FF2A7DFF</color>
+    <color name="image_default_color">#ff4a4a4a</color>
+    <color name="null_color">#00000000</color>
+    <color name="dialog_radio_item">#6c000000</color>
+    <color name="dialog_radio_item_null">#ff4d4f51</color>
+    <color name="story_activity_back_color">#ff1a1d24</color>
+
+    <color name="trim_edit_replace_text_color">#FF2A7DFF</color>
+    <color name="line_color">#1Affffff</color>
+
+    <color name="caption_edit_edit_text_bg">#ff242728</color>
+    <color name="caption_edit_edit_text_hint_color">#4dffffff</color>
+    <color name="caption_edit_bottom_menu_layout_bg">#0C0D0E</color>
+    <color name="video_fragment_bg">#ff12151d</color>
+    <color name="video_fragment_play_bar_bg">#ff12151d</color>
+    <color name="title_back">#ff1a1d24</color>
+    <color name="letter_background">#e8e8e8</color>
+    <color name="gray_90">#ff909293</color>
+    <color name="blue_63ab">#ff63abff</color>
+    <color name="blue_4a">#ff4a90e2</color>
+    <color name="red_ff54">#ffff54cc</color>
+    <color name="red_ff64">#ffff6464</color>
+    <color name="green_2bc5">#ff2bc55e</color>
+    <color name="green_1317">#ff13e7ef</color>
+    <color name="yellow_ff9b">#ffff9b44</color>
+    <color name="green_afd">#AFD800</color>
+    <color name="green_eight">#68FFFF</color>
+    <color name="green_animoji">#FFE268</color>
+    <color name="blue_8b">#8B68FF</color>
+    <color name="red_ff">#FF4B4B</color>
+    <color name="purple_c244">#ffc244ff</color>
+    <color name="gray_8288">#ff828282</color>
+    <color name="blue_63">#63ABFF</color>
+
+    <color name="adjust_selected_bg">#8CFC2B55</color>
+    <color name="red_half_trans">#80FC2B55</color>
+    <color name="adjust_ratio_rect_color">#00FFFF</color>
+    <color name="adjust_rect_shadow_color">#55000000</color>
+    <color name="change_speed_selected">#cc4A90E2</color>
+    <color name="change_speed_selected_alpo">#a04A90E2</color>
+    <!-- 贝塞尔曲线颜色 -->
+    <color name="bezier_rect">#4cFFFFFF</color>
+    <color name="bezier_baseline">#ccFFFFFF</color>
+    <color name="bezier_line">#FC2B55</color>
+    <color name="bezier_fill_point">#242728</color>
+    <color name="bezier_bg">#DFDFDF</color>
+    <color name="bezier_speed">#4CFFFFFF</color>
+
+    <!--  蒙版  -->
+    <color name="mask_line">#FFCC00</color>
+
+    <color name="grey_text_tip">#DBDBDC</color>
+    <color name="ff171717">#ff171717</color>
+    <color name="ff414141">#414141</color>
+    <color name="ffDBDBDC">#DBDBDC</color>
+    <color name="ff9A9A9A">#9A9A9A</color>
+    <color name="ffDDDDDD">#DDDDDD</color>
+</resources>

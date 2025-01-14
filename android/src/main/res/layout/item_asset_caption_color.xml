@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bg_color"
+    android:layout_width="40dp"
+    android:layout_height="30dp">
+
+    <RelativeLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_border_color">
+
+        <RelativeLayout
+            android:id="@+id/rl_bg_color_circle"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_adjust_bg_color_circle">
+
+            <ImageView
+                android:id="@+id/iv_color_select"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

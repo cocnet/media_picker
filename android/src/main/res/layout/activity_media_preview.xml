@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_fragment_background">
+
+    <com.sangcomz.fishbun.util.ImageOriginPager
+        android:id="@+id/vp_detail_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toolbar_preview" 
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar_preview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/btn_detail_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_nav_back_button"
+            android:paddingVertical="10dp"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:id="@+id/ll_detail_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/nav_select_icon"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/nav_res_checked"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/select"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/normal_text_size"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5f000000"
+        android:id="@+id/compressing_content_view"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:id="@+id/compressing_progress_bar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/compressing_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:text="压缩中..."
+            android:id="@+id/compressing_text_view"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

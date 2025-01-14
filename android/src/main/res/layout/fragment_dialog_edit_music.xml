@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="195dp"
+    android:background="@drawable/edit_dialog_fragment_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_music"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_music_header"
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="推荐"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btn_music_clip"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_edit_jianji_disable" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_edit_music"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_volume"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginRight="28dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="原声"
+                    android:textColor="@color/title_white"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/sb_audio"
+                    style="@style/music_volume_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="22dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_music_volume_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="音乐"
+                    android:textColor="@color/title_white"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/sb_music"
+                    style="@style/music_volume_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_music_close"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_close" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv_music_assets_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="音乐"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_music_volume_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/tv_music_assets_tab"
+                    android:gravity="center"
+                    android:text="音量"
+                    android:textColor="@color/title_gray"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_music_done"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_sure" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+</LinearLayout>

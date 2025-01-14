@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JYStickerCustomShapeSelectionView">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0RW-20-clZ">
+                    <rect key="frame" x="0.0" y="0.0" width="376" height="189"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-cB-vxS">
+                            <rect key="frame" x="15" y="0.0" width="346" height="169"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10Z-wr-ElO">
+                                    <rect key="frame" x="0.0" y="0.0" width="115.5" height="169"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRh-3S-YqS">
+                                            <rect key="frame" x="20" y="47" width="75" height="75"/>
+                                            <color key="backgroundColor" red="0.1960678995" green="0.1874012947" blue="0.22908419369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="3uc-Hr-hF0"/>
+                                                <constraint firstAttribute="width" constant="75" id="Qdp-GS-8dd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <state key="normal" title="自由" image="video_sticker_custom_shape_free"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="selectionEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="rIp-5s-c0Q"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="VRh-3S-YqS" firstAttribute="centerX" secondItem="10Z-wr-ElO" secondAttribute="centerX" id="Hed-c0-ztb"/>
+                                        <constraint firstItem="VRh-3S-YqS" firstAttribute="centerY" secondItem="10Z-wr-ElO" secondAttribute="centerY" id="kIH-63-x4H"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLe-QZ-FK3">
+                                    <rect key="frame" x="115.5" y="0.0" width="115" height="169"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bZ-RY-UyM">
+                                            <rect key="frame" x="20" y="47" width="75" height="75"/>
+                                            <color key="backgroundColor" red="0.1960678995" green="0.1874012947" blue="0.22908419369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="KGu-WN-DXA"/>
+                                                <constraint firstAttribute="height" constant="75" id="ufp-Mk-GAa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <state key="normal" title="圆形" image="video_sticker_custom_shape_circle"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="selectionEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="LJg-RN-geZ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="5bZ-RY-UyM" firstAttribute="centerX" secondItem="TLe-QZ-FK3" secondAttribute="centerX" id="BiD-eq-dvu"/>
+                                        <constraint firstItem="5bZ-RY-UyM" firstAttribute="centerY" secondItem="TLe-QZ-FK3" secondAttribute="centerY" id="cdK-wv-Qyk"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FA6-dZ-zHa">
+                                    <rect key="frame" x="230.5" y="0.0" width="115.5" height="169"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSp-2t-hKj">
+                                            <rect key="frame" x="20.5" y="47" width="75" height="75"/>
+                                            <color key="backgroundColor" red="0.1960678995" green="0.1874012947" blue="0.22908419369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="CxN-5v-0F1"/>
+                                                <constraint firstAttribute="height" constant="75" id="Ydu-cI-SEr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <state key="normal" title="方形" image="video_sticker_custom_shape_square"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="selectionEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="6e4-3f-1Kc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="HSp-2t-hKj" firstAttribute="centerX" secondItem="FA6-dZ-zHa" secondAttribute="centerX" id="Rgi-7I-rSL"/>
+                                        <constraint firstItem="HSp-2t-hKj" firstAttribute="centerY" secondItem="FA6-dZ-zHa" secondAttribute="centerY" id="cog-hL-3Fy"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="TLe-QZ-FK3" firstAttribute="width" secondItem="10Z-wr-ElO" secondAttribute="width" id="qTD-FH-Oi1"/>
+                                <constraint firstItem="FA6-dZ-zHa" firstAttribute="width" secondItem="10Z-wr-ElO" secondAttribute="width" id="t2W-ze-4LO"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gsR-cB-vxS" secondAttribute="trailing" constant="15" id="466-Ic-wuO"/>
+                        <constraint firstItem="gsR-cB-vxS" firstAttribute="leading" secondItem="0RW-20-clZ" secondAttribute="leading" constant="15" id="52F-bW-lqQ"/>
+                        <constraint firstAttribute="bottom" secondItem="gsR-cB-vxS" secondAttribute="bottom" constant="20" id="8Td-7z-jbU"/>
+                        <constraint firstItem="gsR-cB-vxS" firstAttribute="top" secondItem="0RW-20-clZ" secondAttribute="top" id="kP6-0g-FHC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0RW-20-clZ" secondAttribute="bottom" id="IwF-3n-ZqH"/>
+                <constraint firstItem="0RW-20-clZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XY5-Hy-ddw"/>
+                <constraint firstAttribute="trailing" secondItem="0RW-20-clZ" secondAttribute="trailing" id="doE-c0-sIa"/>
+                <constraint firstItem="0RW-20-clZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mKd-ce-1hu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="circleButton" destination="5bZ-RY-UyM" id="2Vz-gW-goi"/>
+                <outlet property="freeButton" destination="VRh-3S-YqS" id="V7a-2H-7x9"/>
+                <outlet property="squareButton" destination="HSp-2t-hKj" id="y3W-Rz-YbD"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="-112.83482142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="video_sticker_custom_shape_circle" width="25" height="25"/>
+        <image name="video_sticker_custom_shape_free" width="25" height="25"/>
+        <image name="video_sticker_custom_shape_square" width="25" height="25"/>
+    </resources>
+</document>

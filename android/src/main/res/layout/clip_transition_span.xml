@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="24dp"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_transition_bg"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:background="@drawable/ic_icon_transation"
+        android:layout_centerInParent="true"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_transition_selected_bg"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_item_video_filter_selected_stroke"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "00:08 / 01:33"; ObjectID = "1Bd-3N-fc5"; */
+"1Bd-3N-fc5.text" = "00:08 / 01:33";
+
+/* Class = "UIButton"; normalTitle = "取消"; ObjectID = "4Ur-hs-JKm"; */
+"4Ur-hs-JKm.normalTitle" = "取消";
+
+/* Class = "UIButton"; normalTitle = "完成"; ObjectID = "WSH-yt-gQ1"; */
+"WSH-yt-gQ1.normalTitle" = "完成";
+
+/* Class = "UILabel"; text = "100%"; ObjectID = "Zmz-3a-Tyk"; */
+"Zmz-3a-Tyk.text" = "100%";
+
+/* Class = "UILabel"; text = "00:08 / 01:33"; ObjectID = "cTz-h3-Q85"; */
+"cTz-h3-Q85.text" = "00:08 / 01:33";
+
+/* Class = "UILabel"; text = "音乐音量"; ObjectID = "rTd-Xy-fyH"; */
+"rTd-Xy-fyH.text" = "音乐音量";
